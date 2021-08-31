@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2890584DF8E4E8E12F24EF3D /* Pods_EngineerTinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D2FD9C745251590C8011652 /* Pods_EngineerTinder.framework */; };
 		8865E14826DE8000006697BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8865E14726DE8000006697BF /* AppDelegate.swift */; };
 		8865E14A26DE8000006697BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8865E14926DE8000006697BF /* SceneDelegate.swift */; };
 		8865E14C26DE8000006697BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8865E14B26DE8000006697BF /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29B349B496BFD45CB76BB87F /* Pods-EngineerTinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EngineerTinder.release.xcconfig"; path = "Target Support Files/Pods-EngineerTinder/Pods-EngineerTinder.release.xcconfig"; sourceTree = "<group>"; };
+		7D2FD9C745251590C8011652 /* Pods_EngineerTinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EngineerTinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8865E14426DE8000006697BF /* EngineerTinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EngineerTinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8865E14726DE8000006697BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8865E14926DE8000006697BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		8865E15026DE8001006697BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8865E15326DE8001006697BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8865E15526DE8001006697BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB96FE2BF0C765DEF4715BFC /* Pods-EngineerTinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EngineerTinder.debug.xcconfig"; path = "Target Support Files/Pods-EngineerTinder/Pods-EngineerTinder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2890584DF8E4E8E12F24EF3D /* Pods_EngineerTinder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CB93613F400FE07F55972D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB96FE2BF0C765DEF4715BFC /* Pods-EngineerTinder.debug.xcconfig */,
+				29B349B496BFD45CB76BB87F /* Pods-EngineerTinder.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		0DD5CD82244BEC21380F78F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D2FD9C745251590C8011652 /* Pods_EngineerTinder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8865E13B26DE8000006697BF = {
 			isa = PBXGroup;
 			children = (
 				8865E14626DE8000006697BF /* EngineerTinder */,
 				8865E14526DE8000006697BF /* Products */,
+				0CB93613F400FE07F55972D6 /* Pods */,
+				0DD5CD82244BEC21380F78F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8865E15826DE8001006697BF /* Build configuration list for PBXNativeTarget "EngineerTinder" */;
 			buildPhases = (
+				CEC671A49B6B925020D6DCA5 /* [CP] Check Pods Manifest.lock */,
 				8865E14026DE8000006697BF /* Sources */,
 				8865E14126DE8000006697BF /* Frameworks */,
 				8865E14226DE8000006697BF /* Resources */,
+				D44F2CDFC0C6840FA66728E9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CEC671A49B6B925020D6DCA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EngineerTinder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D44F2CDFC0C6840FA66728E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EngineerTinder/Pods-EngineerTinder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EngineerTinder/Pods-EngineerTinder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EngineerTinder/Pods-EngineerTinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8865E14026DE8000006697BF /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		8865E15926DE8001006697BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB96FE2BF0C765DEF4715BFC /* Pods-EngineerTinder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +371,7 @@
 		};
 		8865E15A26DE8001006697BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29B349B496BFD45CB76BB87F /* Pods-EngineerTinder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
