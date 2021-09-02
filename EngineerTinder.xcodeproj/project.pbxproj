@@ -3,11 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2890584DF8E4E8E12F24EF3D /* Pods_EngineerTinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D2FD9C745251590C8011652 /* Pods_EngineerTinder.framework */; };
+		883016D126DFBB06001D73A7 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883016D026DFBB06001D73A7 /* LogInViewController.swift */; };
+		883016D426DFBC39001D73A7 /* LogInTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883016D326DFBC39001D73A7 /* LogInTextField.swift */; };
+		883016D626DFBC50001D73A7 /* LogInTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883016D526DFBC4F001D73A7 /* LogInTitleLabel.swift */; };
+		883016D826DFBC66001D73A7 /* LogInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883016D726DFBC66001D73A7 /* LogInButton.swift */; };
+		883016DA26DFBFDB001D73A7 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883016D926DFBFDB001D73A7 /* UIColor-Extension.swift */; };
+		883016DD26DFC327001D73A7 /* UIView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883016DC26DFC327001D73A7 /* UIView-Extension.swift */; };
+		8834739C26E107F8003EC608 /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8834739B26E107F8003EC608 /* LogInViewModel.swift */; };
+		8834739F26E111F3003EC608 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8834739E26E111F3003EC608 /* File.swift */; };
 		8865E14826DE8000006697BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8865E14726DE8000006697BF /* AppDelegate.swift */; };
 		8865E14A26DE8000006697BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8865E14926DE8000006697BF /* SceneDelegate.swift */; };
 		8865E14C26DE8000006697BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8865E14B26DE8000006697BF /* ViewController.swift */; };
@@ -19,6 +27,14 @@
 /* Begin PBXFileReference section */
 		29B349B496BFD45CB76BB87F /* Pods-EngineerTinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EngineerTinder.release.xcconfig"; path = "Target Support Files/Pods-EngineerTinder/Pods-EngineerTinder.release.xcconfig"; sourceTree = "<group>"; };
 		7D2FD9C745251590C8011652 /* Pods_EngineerTinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EngineerTinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		883016D026DFBB06001D73A7 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		883016D326DFBC39001D73A7 /* LogInTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInTextField.swift; sourceTree = "<group>"; };
+		883016D526DFBC4F001D73A7 /* LogInTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInTitleLabel.swift; sourceTree = "<group>"; };
+		883016D726DFBC66001D73A7 /* LogInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInButton.swift; sourceTree = "<group>"; };
+		883016D926DFBFDB001D73A7 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		883016DC26DFC327001D73A7 /* UIView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Extension.swift"; sourceTree = "<group>"; };
+		8834739B26E107F8003EC608 /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
+		8834739E26E111F3003EC608 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		8865E14426DE8000006697BF /* EngineerTinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EngineerTinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8865E14726DE8000006697BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8865E14926DE8000006697BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +64,6 @@
 				CB96FE2BF0C765DEF4715BFC /* Pods-EngineerTinder.debug.xcconfig */,
 				29B349B496BFD45CB76BB87F /* Pods-EngineerTinder.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -60,9 +75,57 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		883016D226DFBC1D001D73A7 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				883016D326DFBC39001D73A7 /* LogInTextField.swift */,
+				883016D526DFBC4F001D73A7 /* LogInTitleLabel.swift */,
+				883016D726DFBC66001D73A7 /* LogInButton.swift */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		883016DB26DFBFE0001D73A7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				883016D926DFBFDB001D73A7 /* UIColor-Extension.swift */,
+				883016DC26DFC327001D73A7 /* UIView-Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		883016DE26DFC3DE001D73A7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				883016D026DFBB06001D73A7 /* LogInViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8834739A26E10782003EC608 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8834739B26E107F8003EC608 /* LogInViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8834739D26E11198003EC608 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8834739E26E111F3003EC608 /* File.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		8865E13B26DE8000006697BF = {
 			isa = PBXGroup;
 			children = (
+				8834739D26E11198003EC608 /* Home */,
+				8834739A26E10782003EC608 /* ViewModel */,
+				883016DE26DFC3DE001D73A7 /* ViewController */,
+				883016DB26DFBFE0001D73A7 /* Extensions */,
+				883016D226DFBC1D001D73A7 /* LogIn */,
 				8865E14626DE8000006697BF /* EngineerTinder */,
 				8865E14526DE8000006697BF /* Products */,
 				0CB93613F400FE07F55972D6 /* Pods */,
@@ -206,8 +269,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				883016D426DFBC39001D73A7 /* LogInTextField.swift in Sources */,
+				883016DA26DFBFDB001D73A7 /* UIColor-Extension.swift in Sources */,
+				8834739C26E107F8003EC608 /* LogInViewModel.swift in Sources */,
+				883016DD26DFC327001D73A7 /* UIView-Extension.swift in Sources */,
+				883016D826DFBC66001D73A7 /* LogInButton.swift in Sources */,
 				8865E14C26DE8000006697BF /* ViewController.swift in Sources */,
+				883016D626DFBC50001D73A7 /* LogInTitleLabel.swift in Sources */,
+				883016D126DFBB06001D73A7 /* LogInViewController.swift in Sources */,
 				8865E14826DE8000006697BF /* AppDelegate.swift in Sources */,
+				8834739F26E111F3003EC608 /* File.swift in Sources */,
 				8865E14A26DE8000006697BF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

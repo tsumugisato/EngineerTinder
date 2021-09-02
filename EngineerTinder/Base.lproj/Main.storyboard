@@ -102,11 +102,17 @@
                                 <rect key="frame" x="249" y="760.5" width="69" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" backgroundImage="hand.thumbsup" catalog="system"/>
+                                <connections>
+                                    <action selector="tapSaveBtnWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SUl-xg-7NQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="JgD-QA-uXq" id="iRS-zF-suD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
