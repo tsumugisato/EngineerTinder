@@ -1,0 +1,74 @@
+swagger: "2.0"
+
+info:
+  version: "1.0.0"
+  title: EngineerTinderのapi設計書です
+
+host: localhost:3000
+basePath: "/api"
+
+
+schemes:
+  - http
+  - https
+
+paths:
+  /user/{user_id}:
+    post:
+      tags:
+      - "user"
+      summary: "userの詳細を返す"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "path"
+        name: "user_id"
+        type: "integer"
+        required: true
+      responses:
+        200:
+          description: "リクエストが成功した場合"
+          schema:
+            $ref: "#/definitions/User"
+        404:
+          description: "指定されたuserが見つからない場合"
+definitions:
+  Category:
+   type: "array"
+   items: 
+     properties:
+       language:
+         type: "string"
+       history:
+         type: "integer"
+     example:
+        language: "ruby"
+        history: 3
+
+
+  User:
+    description: "userの詳細情報"
+    type: object
+    properties:
+      id:
+        type: "integer"
+      password:
+        type: "string"     
+      name:
+        type: "string"
+      background:
+        $ref: "#/definitions/Category"
+        description: "プログラミング歴(言語別)"     
+      experience:
+        type: "boolean"
+        description: "実務経験の有無"
+      profile:
+        type: "string"
+        description: "一言"
+    example:
+      id: 123
+      password: "fa3sRs332npa"
+      name: "田中太郎"
+      category: [{"language":"ruby","history":3},{"language":"php","history":1}]
+      background: false
+      profile: "田中太郎と申します。フロントエンドの開発できる人を探しています。"

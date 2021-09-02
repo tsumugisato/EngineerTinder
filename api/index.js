@@ -1,27 +1,35 @@
 /* 1. expressモジュールをロードし、インスタンス化してappに代入。*/
 var express = require("express");
 var app = express();
+// const router = require('./routes')
+const router = require('./router');
+var createError = require('http-errors')
+require('dotenv').config({path:'./config/.env'});
+const PORT = process.env.PORT || 3000
 
-/* 2. listen()メソッドを実行して3000番ポートで待ち受け。*/
-var server = app.listen(3000, function(){
-    console.log("Node.js is listening to PORT:" + server.address().port);
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
+
+app.use(function(req, res, next) {
+    res.header('Content-Type', 'application/json; charset=utf-8');
+    next();
+  });
+
+
+app.use(router)
+
+app.use(function(req, res, next) {
+  next(createError(404));
 });
 
-/* 3. 以後、アプリケーション固有の処理 */
+// error handler
+app.use(function(err, req, res, next) {
+  res.sendStatus(err.status || 500);
+});
 
-// 写真のサンプルデータ
-var photoList = [
-    {
-        id: "001",
-        name: "photo001.jpg",
-    },
-    {
-        id: "002",
-        name: "photo002.jpg",
-    }
-]
-
-// 写真リストを取得するAPI
-app.get("/api/photo/list", function(req, res, next){
-    res.json(photoList);
+// module.exports = app;
+var server = app.listen(PORT, function(){
+    console.log("Node.js is listening to PORT:" + server.address().port);
 });
