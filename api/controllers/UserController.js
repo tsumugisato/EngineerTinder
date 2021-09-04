@@ -3,9 +3,8 @@ const User = require('../models/user')
 
 module.exports = {
     users:async(req,res,next)=>{
-    //    const {email,password,name} = req.body
-    //    console.log(email,'email');
-       res.send('user login')
+       const users = await User.find({});
+       res.status(200).json(users)
     },
 
     user:async(req,res,next)=>{
