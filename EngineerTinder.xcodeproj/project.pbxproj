@@ -29,6 +29,7 @@
 		88F92CE826E24BED001A4981 /* TopViewCotroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F92CE726E24BED001A4981 /* TopViewCotroller.swift */; };
 		88F92CEA26E24C1C001A4981 /* CardInfoLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F92CE926E24C1C001A4981 /* CardInfoLabel.swift */; };
 		88F92CEC26E24C38001A4981 /* CardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F92CEB26E24C38001A4981 /* CardImageView.swift */; };
+		88F92CF726E37702001A4981 /* UIImage-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F92CF626E37702001A4981 /* UIImage-Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		88F92CE726E24BED001A4981 /* TopViewCotroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewCotroller.swift; sourceTree = "<group>"; };
 		88F92CE926E24C1C001A4981 /* CardInfoLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInfoLabel.swift; sourceTree = "<group>"; };
 		88F92CEB26E24C38001A4981 /* CardImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageView.swift; sourceTree = "<group>"; };
+		88F92CF626E37702001A4981 /* UIImage-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage-Extensions.swift"; sourceTree = "<group>"; };
 		CB96FE2BF0C765DEF4715BFC /* Pods-EngineerTinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EngineerTinder.debug.xcconfig"; path = "Target Support Files/Pods-EngineerTinder/Pods-EngineerTinder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +104,7 @@
 		883016DB26DFBFE0001D73A7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				88F92CF626E37702001A4981 /* UIImage-Extensions.swift */,
 				883016D926DFBFDB001D73A7 /* UIColor-Extension.swift */,
 				883016DC26DFC327001D73A7 /* UIView-Extension.swift */,
 			);
@@ -323,6 +326,7 @@
 				883473C126E22A72003EC608 /* API.swift in Sources */,
 				883473C326E23DE7003EC608 /* HomeViewController.swift in Sources */,
 				8865E14A26DE8000006697BF /* SceneDelegate.swift in Sources */,
+				88F92CF726E37702001A4981 /* UIImage-Extensions.swift in Sources */,
 				88F92CE426E248AC001A4981 /* BottomControlView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

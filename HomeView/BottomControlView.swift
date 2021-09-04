@@ -8,9 +8,9 @@
 import UIKit
 
 class BottomControlView: UIView {
-    let nopeView = BottomButtonView(frame: .zero, width: 60, imageName: "nope.png")
-    let backView = BottomButtonView(frame: .zero, width: 50, imageName: "hart.png")
-    let likeView = BottomButtonView(frame: .zero, width: 60, imageName: "star.png")
+    let nopeView = BottomButtonView(frame: .zero, width: 60, imageName: "bad")
+    let backView = BottomButtonView(frame: .zero, width: 50, imageName: "back")
+    let likeView = BottomButtonView(frame: .zero, width: 60, imageName: "good")
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -46,8 +46,8 @@ class BottomButtonView: UIView {
         super.init(frame: frame)
         
         button = BottomButton(type:.custom)
-//        button?.setImage(UIImage(named:imageName)?.resize(size: .init(width: width*0.7, height: width*0.7)), for: .normal)
-//        button?.setTitle("tap", for: .normal)
+        button?.setImage(UIImage(named:imageName)?.resize(size: .init(width: width*0.9, height: width*0.9)), for: .normal)
+        button?.setTitle("tap", for: .normal)
         button?.translatesAutoresizingMaskIntoConstraints = false
         button?.backgroundColor = .white
         button?.layer.cornerRadius = width / 2
