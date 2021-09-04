@@ -8,16 +8,14 @@ import Foundation
 
 struct UserProfile: Codable {
 
-    let id: Int
     let name: String
     let email: String?
-    let avatarUrl: String
+    let password:Int
     
     private enum CodingKeys: String, CodingKey {
-        case id
         case name
         case email
-        case avatarUrl = "avatar_url"
+        case password
     }
 }
 
@@ -25,13 +23,13 @@ struct UserProfile: Codable {
 // ユーザーのリポジトリ情報
 struct Repository: Codable {
 
-    let id: Int
+    let email:String
     let name: String
-    let url: String
+    let password:String
     
     private enum CodingKeys: String, CodingKey {
-        case id
+        case email
         case name
-        case url = "html_url"
+        case password
     }
 }

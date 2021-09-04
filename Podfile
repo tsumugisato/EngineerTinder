@@ -9,6 +9,8 @@ target 'EngineerTinder' do
   pod 'Alamofire'
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'Moya', '~> 14.0'
+
 
   # Pods for EngineerTinder
 

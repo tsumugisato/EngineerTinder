@@ -7,6 +7,7 @@
 
 import Foundation
 import RxSwift
+import Moya
 
 class LogInViewModel {
     private let disposeBag = DisposeBag()
