@@ -1,7 +1,7 @@
 module.exports = {
     login:async(req,res,next)=>{
-       const {email,password,name} = req.body
-       console.log(email,'email');
+    //    const {email,password,name} = req.body
+    //    console.log(email,'email');
        res.send('user login')
     },
 

@@ -3,9 +3,11 @@ const router = express.Router();
 
 // Auth
 const AuthController = require('./controllers/AuthController');
+const UserController = require('./controllers/UserController');
+
 // User
-const UserGetAPI = require('./controllers/UserGetAPI');
-const UserDelAPI = require('./controllers/UserDelAPI');
+// const UserGetAPI = require('./controllers/UserGetAPI');
+// const UserDelAPI = require('./controllers/UserDelAPI');
 
 
 
@@ -19,8 +21,10 @@ router.post('/logout', AuthController.logout);
 router.post('/sign', AuthController.logout);
 
 //User
-router.post('/user/:id',UserGetAPI);
-router.post('/user/del',UserDelAPI);
+router.get('/users',UserController.users)
+router.get('/user/:id',UserController.user)
+// router.post('/user/:id',UserGetAPI);
+// router.post('/user/del',UserDelAPI);
 
 
 
