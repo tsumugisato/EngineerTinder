@@ -13,8 +13,8 @@ class TopViewController: UIView {
     
     private let disposeBag = DisposeBag()
     
-    let tinderButton = createTopButton(imageName: "tinder",unselectedname:"fire-unselected")
-    let profileButton = createTopButton(imageName: "profile",unselectedname:"user-unselected")
+    let tinderButton = createTopButton(imageName: "tinder",unselectedname:"fire")
+    let profileButton = createTopButton(imageName: "profile",unselectedname:"user")
     
     static private func createTopButton(imageName:String,unselectedname:String) -> UIButton{
         let button = UIButton(type: .custom)

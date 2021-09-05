@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UserProfileInfo: UICollectionViewCell {
+class UserProfileInfoViewCell: UICollectionViewCell {
     
     var user: User? {
         didSet {
@@ -15,7 +15,9 @@ class UserProfileInfo: UICollectionViewCell {
             emailTextField.text = user?.email
             ageTextField.text = user?.age
             residenceTextField.text = user?.residence
-            hobbyTextField.text = user?.hobby
+            language1TextField.text = user?.language1
+            language2TextField.text = user?.language2
+            language3TextField.text = user?.language3
             introductionTextField.text = user?.introduction
         }
     }
@@ -25,20 +27,33 @@ class UserProfileInfo: UICollectionViewCell {
     let ageLabel = ProfileLabel(title: "年齢")
     let emailLabel = ProfileLabel(title: "email")
     let residenceLabel = ProfileLabel(title: "居住地")
-    let hobbyLabel = ProfileLabel(title: "趣味")
-    let introductionLabel = ProfileLabel(title: "自己紹介")
+    let language1Label = ProfileLabel(title: "得意なプログラミング言語第1位")
+    let howlong1Label = ProfileLabel(title: "期間")
+    let language2Label = ProfileLabel(title: "得意なプログラミング言語第2位")
+    let howlong2Label = ProfileLabel(title: "期間")
+    let language3Label = ProfileLabel(title: "得意なプログラミング言語第3位")
+    let howlong3Label = ProfileLabel(title: "期間")
+    let practiceLabel = ProfileLabel(title:"実務経験")
+    let introductionLabel = ProfileLabel(title: "一言")
     
     let nameTextField = ProfileTextField(placeholder: "名前")
     let ageTextField = ProfileTextField(placeholder: "年齢")
     let emailTextField = ProfileTextField(placeholder: "email")
     let residenceTextField = ProfileTextField(placeholder: "居住地")
-    let hobbyTextField = ProfileTextField(placeholder: "趣味")
-    let introductionTextField = ProfileTextField(placeholder: "自己紹介")
+    let language1TextField = ProfileTextField(placeholder: "得意なプログラミング言語第1位")
+    let howlong1TextField = ProfileTextField(placeholder: "期間")
+    
+    let language2TextField = ProfileTextField(placeholder: "得意なプログラミング言語第2位")
+    let howlong2TextField = ProfileTextField(placeholder: "期間")
+    let language3TextField = ProfileTextField(placeholder: "得意なプログラミング言語第3位")
+    let howlong3TextField = ProfileTextField(placeholder: "期間")
+    let practiceTextField = ProfileTextField(placeholder: "あり/なし")
+    let introductionTextField = ProfileTextField(placeholder: "よろしくお願いします。")
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
         
-        let views = [[nameLabel, nameTextField], [ageLabel, ageTextField], [emailLabel, emailTextField], [residenceLabel, residenceTextField], [hobbyLabel, hobbyTextField], [introductionLabel, introductionTextField]]
+        let views = [[nameLabel, nameTextField], [ageLabel, ageTextField], [emailLabel, emailTextField], [residenceLabel, residenceTextField], [language1Label, language1TextField],[howlong1Label,howlong1TextField],[language2Label,language2TextField],[howlong2Label,howlong2TextField],[language3Label,language3TextField], [howlong3Label,howlong3TextField],[introductionLabel, introductionTextField]]
         
         let stackViews = views.map { (views) -> UIStackView in
             guard let label = views.first as? UILabel,

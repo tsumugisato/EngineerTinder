@@ -24,10 +24,16 @@
 		8865E14F26DE8000006697BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8865E14D26DE8000006697BF /* Main.storyboard */; };
 		8865E15126DE8001006697BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8865E15026DE8001006697BF /* Assets.xcassets */; };
 		8865E15426DE8001006697BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8865E15226DE8001006697BF /* LaunchScreen.storyboard */; };
+		886E685426E37F0000A33092 /* CardInfoLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886E685326E37F0000A33092 /* CardInfoLabel.swift */; };
+		886E685626E3AA6600A33092 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886E685526E3AA6600A33092 /* ProfileViewController.swift */; };
+		886E685D26E3C98500A33092 /* UIButton-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886E685C26E3C98500A33092 /* UIButton-Extension.swift */; };
+		886E686026E3CD6C00A33092 /* ProfileLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886E685F26E3CD6C00A33092 /* ProfileLabel.swift */; };
+		886E686226E44D2600A33092 /* ProfileTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886E686126E44D2600A33092 /* ProfileTextField.swift */; };
+		886E686426E44D6000A33092 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886E686326E44D6000A33092 /* Users.swift */; };
+		886E686726E44F3800A33092 /* UserProfileInfoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886E686626E44F3800A33092 /* UserProfileInfoViewCell.swift */; };
 		88F92CE426E248AC001A4981 /* BottomControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F92CE326E248AC001A4981 /* BottomControlView.swift */; };
 		88F92CE626E24B9C001A4981 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F92CE526E24B9C001A4981 /* CardView.swift */; };
 		88F92CE826E24BED001A4981 /* TopViewCotroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F92CE726E24BED001A4981 /* TopViewCotroller.swift */; };
-		88F92CEA26E24C1C001A4981 /* CardInfoLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F92CE926E24C1C001A4981 /* CardInfoLabel.swift */; };
 		88F92CEC26E24C38001A4981 /* CardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F92CEB26E24C38001A4981 /* CardImageView.swift */; };
 		88F92CF726E37702001A4981 /* UIImage-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F92CF626E37702001A4981 /* UIImage-Extensions.swift */; };
 /* End PBXBuildFile section */
@@ -53,10 +59,16 @@
 		8865E15026DE8001006697BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8865E15326DE8001006697BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8865E15526DE8001006697BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		886E685326E37F0000A33092 /* CardInfoLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInfoLabel.swift; sourceTree = "<group>"; };
+		886E685526E3AA6600A33092 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		886E685C26E3C98500A33092 /* UIButton-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton-Extension.swift"; sourceTree = "<group>"; };
+		886E685F26E3CD6C00A33092 /* ProfileLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLabel.swift; sourceTree = "<group>"; };
+		886E686126E44D2600A33092 /* ProfileTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTextField.swift; sourceTree = "<group>"; };
+		886E686326E44D6000A33092 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		886E686626E44F3800A33092 /* UserProfileInfoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileInfoViewCell.swift; sourceTree = "<group>"; };
 		88F92CE326E248AC001A4981 /* BottomControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomControlView.swift; sourceTree = "<group>"; };
 		88F92CE526E24B9C001A4981 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		88F92CE726E24BED001A4981 /* TopViewCotroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewCotroller.swift; sourceTree = "<group>"; };
-		88F92CE926E24C1C001A4981 /* CardInfoLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInfoLabel.swift; sourceTree = "<group>"; };
 		88F92CEB26E24C38001A4981 /* CardImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageView.swift; sourceTree = "<group>"; };
 		88F92CF626E37702001A4981 /* UIImage-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage-Extensions.swift"; sourceTree = "<group>"; };
 		CB96FE2BF0C765DEF4715BFC /* Pods-EngineerTinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EngineerTinder.debug.xcconfig"; path = "Target Support Files/Pods-EngineerTinder/Pods-EngineerTinder.debug.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +119,7 @@
 				88F92CF626E37702001A4981 /* UIImage-Extensions.swift */,
 				883016D926DFBFDB001D73A7 /* UIColor-Extension.swift */,
 				883016DC26DFC327001D73A7 /* UIView-Extension.swift */,
+				886E685C26E3C98500A33092 /* UIButton-Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -116,6 +129,7 @@
 			children = (
 				883016D026DFBB06001D73A7 /* LogInViewController.swift */,
 				883473C226E23DE7003EC608 /* HomeViewController.swift */,
+				886E685526E3AA6600A33092 /* ProfileViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -131,23 +145,18 @@
 		8834739D26E11198003EC608 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				883473CE26E2442A003EC608 /* New Group */,
 				8834739E26E111F3003EC608 /* UserProfile.swift */,
 				883473C026E22A72003EC608 /* API.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
 		};
-		883473CE26E2442A003EC608 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		8865E13B26DE8000006697BF = {
 			isa = PBXGroup;
 			children = (
+				886E686526E44F1800A33092 /* Cells */,
+				886E686326E44D6000A33092 /* Users.swift */,
+				886E685E26E3CD5400A33092 /* View */,
 				88F92CE226E2459F001A4981 /* HomeView */,
 				8834739D26E11198003EC608 /* Home */,
 				8834739A26E10782003EC608 /* ViewModel */,
@@ -183,13 +192,30 @@
 			path = EngineerTinder;
 			sourceTree = "<group>";
 		};
+		886E685E26E3CD5400A33092 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				886E685F26E3CD6C00A33092 /* ProfileLabel.swift */,
+				886E686126E44D2600A33092 /* ProfileTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		886E686526E44F1800A33092 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				886E686626E44F3800A33092 /* UserProfileInfoViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		88F92CE226E2459F001A4981 /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
 				88F92CE326E248AC001A4981 /* BottomControlView.swift */,
 				88F92CE526E24B9C001A4981 /* CardView.swift */,
 				88F92CE726E24BED001A4981 /* TopViewCotroller.swift */,
-				88F92CE926E24C1C001A4981 /* CardInfoLabel.swift */,
+				886E685326E37F0000A33092 /* CardInfoLabel.swift */,
 				88F92CEB26E24C38001A4981 /* CardImageView.swift */,
 			);
 			path = HomeView;
@@ -310,23 +336,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				883016D426DFBC39001D73A7 /* LogInTextField.swift in Sources */,
+				886E686726E44F3800A33092 /* UserProfileInfoViewCell.swift in Sources */,
+				886E685D26E3C98500A33092 /* UIButton-Extension.swift in Sources */,
 				883016DA26DFBFDB001D73A7 /* UIColor-Extension.swift in Sources */,
+				886E685626E3AA6600A33092 /* ProfileViewController.swift in Sources */,
 				8834739C26E107F8003EC608 /* LogInViewModel.swift in Sources */,
 				883016DD26DFC327001D73A7 /* UIView-Extension.swift in Sources */,
 				88F92CE626E24B9C001A4981 /* CardView.swift in Sources */,
-				88F92CEA26E24C1C001A4981 /* CardInfoLabel.swift in Sources */,
 				88F92CE826E24BED001A4981 /* TopViewCotroller.swift in Sources */,
+				886E685426E37F0000A33092 /* CardInfoLabel.swift in Sources */,
 				883016D826DFBC66001D73A7 /* LogInButton.swift in Sources */,
 				8865E14C26DE8000006697BF /* ViewController.swift in Sources */,
+				886E686226E44D2600A33092 /* ProfileTextField.swift in Sources */,
 				883016D626DFBC50001D73A7 /* LogInTitleLabel.swift in Sources */,
 				88F92CEC26E24C38001A4981 /* CardImageView.swift in Sources */,
 				883016D126DFBB06001D73A7 /* LogInViewController.swift in Sources */,
 				8865E14826DE8000006697BF /* AppDelegate.swift in Sources */,
+				886E686426E44D6000A33092 /* Users.swift in Sources */,
 				8834739F26E111F3003EC608 /* UserProfile.swift in Sources */,
 				883473C126E22A72003EC608 /* API.swift in Sources */,
 				883473C326E23DE7003EC608 /* HomeViewController.swift in Sources */,
 				8865E14A26DE8000006697BF /* SceneDelegate.swift in Sources */,
 				88F92CF726E37702001A4981 /* UIImage-Extensions.swift in Sources */,
+				886E686026E3CD6C00A33092 /* ProfileLabel.swift in Sources */,
 				88F92CE426E248AC001A4981 /* BottomControlView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

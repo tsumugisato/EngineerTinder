@@ -14,7 +14,7 @@ class CardImageView:UIView{
         backgroundColor = .blue
         layer.cornerRadius = 10
         contentMode = .scaleAspectFill
-        backgroundColor = .green
+        backgroundColor = .yellow
         clipsToBounds = true
     }
     

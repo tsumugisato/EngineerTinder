@@ -9,13 +9,14 @@ import UIKit
 
 class CardView:UIView{
     private let cardImageView = CardImageView(frame:.zero)
-    private let nameLabel = CardInfoLabel(text: "佐藤紬", font: .systemFont(ofSize: 40, weight: .heavy))
-    private let historyLabel1 = CardInfoLabel(text: "Swift2年", font: .systemFont(ofSize:20,weight:.regular))
-    private let historyLabel2 = CardInfoLabel(text: "Python8ヶ月", font: .systemFont(ofSize:20,weight:.regular))
-    private let historyLabel3 = CardInfoLabel(text: "Rails5ヶ月", font: .systemFont(ofSize:20,weight:.regular))
+    private let nameLabel = CardInfoLabel(text: "♂佐藤紬(22)", font: .systemFont(ofSize: 50, weight: .heavy))
+    private let historyLabel1 = CardInfoLabel(text: "Swift8ヶ月", font: .systemFont(ofSize:35,weight:.bold))
+    private let historyLabel2 = CardInfoLabel(text: "Python半年", font: .systemFont(ofSize:35,weight:.bold))
+    private let historyLabel3 = CardInfoLabel(text: "Rails5ヶ月", font: .systemFont(ofSize:35,weight:.bold))
     private let residenceLabel = CardInfoLabel(text: "東京都", font: .systemFont(ofSize: 25, weight: .regular))
     private let InternshipLabel = CardInfoLabel(text: "実務経験あり", font: .systemFont(ofSize:25,weight:.regular))
-    private let goodLabel = CardInfoLabel(text: "TRUE", textColor: .rgb(red: 137, green: 223, blue: 86))
+    private let IntroductionTextView = CardInfoLabel(text: "よろしくお願いします。",font: .systemFont(ofSize:25,weight:.regular))
+    private let goodLabel = CardInfoLabel(text: "TRUE", textColor: .rgb(red: 36, green: 120, blue: 181))
     private let nopeLabel = CardInfoLabel(text: "FALSE", textColor: .rgb(red: 222, green: 110, blue: 110))
     
 
@@ -68,6 +69,7 @@ class CardView:UIView{
                       self.layoutIfNeeded()
                       self.goodLabel.alpha = 0
                       self.nopeLabel.alpha = 0
+                     
                   }
               }
         }
@@ -77,25 +79,30 @@ class CardView:UIView{
     addSubview(cardImageView)
     addSubview(goodLabel)
     addSubview(nopeLabel)
+    addSubview(IntroductionTextView)
         
         cardImageView.anchor(top:topAnchor,bottom:bottomAnchor,left:leftAnchor,right:rightAnchor,leftPadding: 10,rightPadding: 10)
         goodLabel.anchor(top:cardImageView.topAnchor,left:cardImageView.leftAnchor,width:140,height:55,topPadding: 25,leftPadding: 20)
         nopeLabel.anchor(top:cardImageView.topAnchor,right:cardImageView.rightAnchor,width:140,height:55,topPadding: 25,rightPadding: 20)
+        IntroductionTextView.anchor(top: cardImageView.bottomAnchor,bottomPadding: 0, leftPadding: 10, rightPadding: -10)
         
-        let infoVerticalStackView = UIStackView(arrangedSubviews: [nameLabel,residenceLabel,historyLabel1,historyLabel2,historyLabel3,InternshipLabel])
+        let infoVerticalStackView = UIStackView(arrangedSubviews: [nameLabel,residenceLabel,historyLabel1,historyLabel2,historyLabel3,InternshipLabel,IntroductionTextView])
         nameLabel.textAlignment = .center
         residenceLabel.textAlignment = .center
         historyLabel1.textAlignment = .center
         historyLabel2.textAlignment = .center
         historyLabel3.textAlignment = .center
         InternshipLabel.textAlignment = .center
+        IntroductionTextView.textAlignment = .center
+        IntroductionTextView.alpha = 1
         
             infoVerticalStackView.axis = .vertical
-//            infoVerticalStackView.textAlignment = NSTextAlignment.Center
-            infoVerticalStackView.spacing = 10
+            infoVerticalStackView.spacing = 0
             infoVerticalStackView.distribution = .fillEqually
             infoVerticalStackView.translatesAutoresizingMaskIntoConstraints = false
         infoVerticalStackView.backgroundColor = .green
+        infoVerticalStackView.layer.cornerRadius = 10
+        
            
             
             self.addSubview(infoVerticalStackView)

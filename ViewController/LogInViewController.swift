@@ -8,10 +8,14 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import Moya
 //import FirebaseAuth
 //import FirebaseFirestore
 
 class LogInViewController:UIViewController{
+    
+    var users = [User]()
+    let userProvider = MoyaProvider<MyService>()
     
     private let disposeBag = DisposeBag()
     private let viewModel = LogInViewModel()
@@ -50,13 +54,13 @@ class LogInViewController:UIViewController{
         let baseStackView = UIStackView(arrangedSubviews: [nameTextField,emailTextField,passwordTextField,registerButton])
         baseStackView.axis = .vertical
         baseStackView.distribution = .fillEqually
-        baseStackView.spacing = 20
+        baseStackView.spacing = 30
         
         view.addSubview(baseStackView)
         view.addSubview(titleLabel)
         nameTextField.anchor(height:45)
         baseStackView.anchor(left:view.leftAnchor,right: view.rightAnchor,centerY: view.centerYAnchor,leftPadding: 40,rightPadding: 40)
-        titleLabel.anchor(bottom:baseStackView.topAnchor,centerX:view.centerXAnchor,bottomPadding:20)
+        titleLabel.anchor(bottom:baseStackView.topAnchor,centerX:view.centerXAnchor,bottomPadding:100)
     }
     
     private func setupBindings(){
@@ -90,14 +94,27 @@ class LogInViewController:UIViewController{
             }
             .disposed(by: disposeBag)
 //
-//        registerButton.rx.tap
-//            .asDriver()
-//            .drive{[weak self] _ in
-//                //登録時の処理
-////                self?.createUserToFireAuth()
-//            }
-//            .disposed(by:disposeBag)
+        registerButton.rx.tap
+            .asDriver()
+            .drive{[weak self] _ in
+                //登録時の処理
+                self?.readUser()
+                self?.dismiss(animated: true)
+            }
+            .disposed(by:disposeBag)
 
+    }
+    
+    private func readUser(){
+        userProvider.request(.users){ (result) in
+            switch result{
+            case .success(let response):
+                let json = try!JSONSerialization.jsonObject(with:response.data,options: [])
+                print(json,"成功")
+            case .failure(let error):
+                print(error,"失敗")
+            }
+        }
     }
 
 //    private func createUserToFireAuth(){

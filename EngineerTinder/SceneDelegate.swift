@@ -4,8 +4,9 @@
 //
 //  Created by 佐藤紬 on 2021/09/01.
 //
-
+//
 import UIKit
+
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -18,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = HomeViewController.init()
+            window.rootViewController = LogInViewController.init()
             self.window = window
             window.makeKeyAndVisible()
         }
